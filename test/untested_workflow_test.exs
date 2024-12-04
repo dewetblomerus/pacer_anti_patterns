@@ -1,8 +1,12 @@
 defmodule UntestedWorkflowTest do
   @moduledoc """
-  We are testing that the workflow can be built, and we test the resolver
-  functions, we even use pacer assertions on the graph,
+  None of the tests in this module are anti-patterns. The anti-pattern is
+  what is missing from the tests. We are testing that the workflow can be built,
+  we are testing the shape of the graph, we are testing the resolver functions,
   but we never test that the workflow actually runs.
+
+  The point here is that you can have many beautiful tests, but if you never
+  run the workflow, it is still untested.
   """
 
   use ExUnit.Case
