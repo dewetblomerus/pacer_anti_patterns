@@ -8,7 +8,7 @@ defmodule UntestedWorkflow do
 
   graph do
     field(:numbers)
-    field(:total, resolver: &__MODULE__.total/1, dependencies: [:numbers])
+    field(:total, resolver: &__MODULE__.sum/1, dependencies: [:numbers])
   end
 
   def new(%{numbers: numbers}) when is_list(numbers) do
@@ -20,7 +20,7 @@ defmodule UntestedWorkflow do
     )
   end
 
-  def total(%{some_random_key: random_value}) do
-    random_value
+  def sum(%{some_random_key: numbers}) do
+    Enum.sum(numbers)
   end
 end

@@ -25,6 +25,6 @@ defmodule UntestedWorkflowTest do
   end
 
   test "total resolver passes test, but it will fail the workflow" do
-    assert UntestedWorkflow.total(%{some_random_key: 99}) == 99
+    assert UntestedWorkflow.sum(%{some_random_key: [2, 3]}) == 5
   end
 end
