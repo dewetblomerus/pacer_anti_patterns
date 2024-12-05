@@ -21,6 +21,7 @@ defmodule PacerAntiPatterns.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:benchee, "~> 1.3"},
       {:mix_test_watch, "~> 1.2"},
       {:pacer, "~> 0.1.6"}
     ]

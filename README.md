@@ -1,21 +1,16 @@
 # PacerAntiPatterns
 
-**TODO: Add description**
+### Practical example of anti-patterns using Pacer
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `pacer_anti_patterns` to your list of dependencies in `mix.exs`:
+### How to run the benchmark
 
 ```elixir
-def deps do
-  [
-    {:pacer_anti_patterns, "~> 0.1.0"}
-  ]
-end
+Benchee.run(
+  %{
+    "workflow" => &CompiledBenchmark.workflow/0,
+    "module" => &CompiledBenchmark.module/0
+    },
+  time: 10,
+  memory_time: 2
+)
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/pacer_anti_patterns>.
-
