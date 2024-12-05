@@ -2,6 +2,12 @@
 
 ### Practical example of anti-patterns using Pacer
 
+### How to run the tests
+
+```
+mix test
+```
+
 ### How to run the benchmark
 
 ```elixir
