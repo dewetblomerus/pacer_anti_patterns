@@ -43,6 +43,8 @@ defmodule CompiledBenchmark do
   @moduledoc """
   Benchee compplains about using anonymous functions on super fast code,
   so this module compiles the call functions to make Benchee happy.
+
+  Check the README.md for how to run the benchmark.
   """
 
   def workflow do
