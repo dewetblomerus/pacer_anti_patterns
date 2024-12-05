@@ -1,6 +1,6 @@
 # PacerAntiPatterns
 
-### Practical examples of anti-patterns using Pacer
+### Practical examples of anti-patterns using [Pacer Workflows](https://hexdocs.pm/pacer)
 
 ### Motivation
 
